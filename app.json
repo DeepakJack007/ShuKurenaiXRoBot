@@ -1,5 +1,5 @@
 {
-      "name": "ShuKurenaiXRoBot",
+      "name": "χєηєη",
       "description": "A Powerful  Telegram group management bot with anime theme.",
       "keywords": [
          "telegram",
@@ -9,8 +9,8 @@
          "naorobot"
       ],
     
-   "logo":    "",  
-   "repository": "https://github.com/shukurenai007/https://github.com/shukurenai007/ShuKurenaiXRoBot",
+   "logo":    "https://telegra.ph/file/e9d18811d25b84feb31bc.jpg",  
+   "repository": "https://github.com/i-am-pro-king/ALONE",
    "addons": [
           {
          "options": {
@@ -46,11 +46,11 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1151132400"
+         "value": "5409807181"
      },
 
       "STRING_SESSION": {
-         "description": "Fill with telethon string session.",
+         "description": "Get it from @xenen_string_bot.",
          "required": true,
          "value": "" 
       },
@@ -64,7 +64,7 @@
       },
       "BOT_USERNAME": {
          "description": "username of your bot without the @",
-         "value": "ShuKurenaiXRoBot"
+         "value": "xenen_robot"
       },
 
       "BOT_ID": {
@@ -74,12 +74,12 @@
 
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "DeepakJack007"
+         "value": "xenen_is_bot"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "ShuKurenaiSupport"
+         "value": "ALONE_MUSIC_ADD_ICT"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
@@ -97,12 +97,12 @@
      "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": "-1001621342394"
+         "value": "-1001535636281"
       },
       "JOIN_LOGGER": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
-         "value": "-1001621342394"
+         "value": "-1001535636281"
       },      
       "CASH_API_KEY": {
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
