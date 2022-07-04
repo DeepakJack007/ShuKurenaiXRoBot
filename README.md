@@ -2,6 +2,12 @@
 
 
 [![χєηєη](https://telegra.ph/file/a68417ac8292b75f01f1d.jpg)](https://github.com/i-am-pro-king/ALONE)
+
+
+[![Replit](https://blog.replit.com/images/logo.png)](https://replit.com/@iampr0king/ALONE-STRING)
+
+
+
 <details>
   <summary> • ⚡INSTALLING⚡ • </summary>
 
