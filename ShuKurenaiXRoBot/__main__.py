@@ -82,9 +82,6 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT =
 
-await message.reply_sticker("CAACAgUAAx0CZIiVngABAoCAYqWU-JzBZtfz14vr_DfDkJyy7X8AAjYGAAIsk1lUo7RMhQfOm28eBA")
-
-
 """
 *Hello {} !*
 ✪ I'm a management bot [🔥](https://telegra.ph/file/f9fc0e44d5b94cbddc6f6.jpg) 
