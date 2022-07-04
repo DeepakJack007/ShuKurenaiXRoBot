@@ -80,20 +80,27 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """
+PM_START_TEXT =
+
+await message.reply_sticker("CAACAgUAAx0CZIiVngABAoCAYqWU-JzBZtfz14vr_DfDkJyy7X8AAjYGAAIsk1lUo7RMhQfOm28eBA")
+
+
+"""
 *Hello {} !*
-✪ I'm an Beyblade theme management bot [🔥](http://telegra.ph/file/3cd1f5776c3ea08f609f4.jpg) 
+✪ I'm a management bot [🔥](https://telegra.ph/file/f9fc0e44d5b94cbddc6f6.jpg) 
+
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
 ────────────────────────
+
 ✪ Hit /help to see my available commands.
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➗ Add Shu Kurenai To Your Group ➗", url="t.me/ShuKurenaiXRoBot?startgroup=new"),
+            text="➗ Add χєηєη To Your Group ➗", url="t.me/xenen_robot?startgroup=new"),
     ],
     [
         InlineKeyboardButton(
@@ -109,19 +116,19 @@ buttons = [
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
                              text="Updates🛰️",
-                             url=f"https://t.me/shukurenai007"),
+                             url=f"https://t.me/ALONE_MUSIC_ADD_ICT"),
     ],
 
 ]
 
 
 HELP_STRINGS = """
-Click on the button bellow to get description about specifics command[.](http://telegra.ph/file/e384ab52db8c0912ca356.jpg)"""
+Click on the button bellow to get description about specifics command[.](https://telegra.ph/file/f9fc0e44d5b94cbddc6f6.jpg)"""
 
 HELP_MSG = "Click the button below to get help manu in your pm."
-DONATE_STRING = """Contact to **@shukurenai007bot**"""
-HELP_IMG = "http://telegra.ph/file/2861eda5afba02bf04254.jpg"
-GROUP_IMG = "http://telegra.ph/file/0adf9e97735ba8a420973.jpg"
+DONATE_STRING = """Contact to **@ALONE_MUSIC_ADD_ICT**"""
+HELP_IMG = "https://telegra.ph/file/f9fc0e44d5b94cbddc6f6.jpg"
+GROUP_IMG = "https://telegra.ph/file/f9fc0e44d5b94cbddc6f6.jpg"
 
 
 
@@ -186,7 +193,7 @@ def send_help(chat_id, text, keyboard=None):
 
 def test(update: Update, context: CallbackContext):
     # pprint(eval(str(update)))
-    # update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
+    # update.effective_message.reply_text("Hola! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
     update.effective_message.reply_text("This person edited a message")
     print(update.effective_message)
 
@@ -379,29 +386,28 @@ def shukurenai_about_callback(update, context):
     query = update.callback_query
     if query.data == "shukurenai_":
         query.message.edit_text(
-            text="๏ I'm *Shu Kurenai*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *χєηєη*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Shu Kurenai's licensed under the GNU General Public License v3.0_"
             "\n\n Click on button bellow to get basic help for ShuKurenaiXRoBot.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="shukurenai_admin"),
-                    InlineKeyboardButton(text="Notes", callback_data="shukurenai_notes"),
+                    InlineKeyboardButton(text="Admins", callback_data="https://t.me/xenen_is_bot"),
+                    InlineKeyboardButton(text="Notes", callback_data="https://t.me/ALONE_MUSIC_ADD_ICT"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", callback_data="shukurenai_support"),
-                    InlineKeyboardButton(text="Credits", callback_data="shukurenai_credit"),
+                    InlineKeyboardButton(text="Support", callback_data="https://t.me/ALONE_MUSIC_ADD_ICT"),
+                    InlineKeyboardButton(text="Credits", callback_data="https://t.me/ALONE_MUSIC_ADD_ICT"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/shukurenai007/ShuKurenaiXRoBot"),
+                    InlineKeyboardButton(text="MORE BOTS", url="https://t.me/xenen_music_bot"),
                     InlineKeyboardButton(text="Try inline!​​", switch_inline_query_current_chat=""), 
                  ],
                  [
@@ -428,7 +434,7 @@ def shukurenai_about_callback(update, context):
     elif query.data == "shukurenai_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulation, Shu Kurenai now ready to manage your group."
+            "\nCongragulation, χєηєη now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -455,14 +461,14 @@ def shukurenai_about_callback(update, context):
         )
     elif query.data == "shukurenai_support":
         query.message.edit_text(
-            text="*๏ Shu Kurenai support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Shu Kurenai.",
+            text="*๏ χєηєη support chats*"
+            "\nJoin My Support Group/Channel for see or report a problem on χєηєη.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/ShuKurenaiSupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/shukurenai007"),
+                    InlineKeyboardButton(text="Support", url="t.me/ALONE_MUSIC_ADD_ICT"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/ALONE_MUSIC_ADD_ICT"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="shukurenai_"),
@@ -476,14 +482,14 @@ def shukurenai_about_callback(update, context):
     elif query.data == "shukurenai_credit":
         query.message.edit_text(
             text=f"๏ Credis for Shu Kurenai\n"
-            "\nHere Developers Making And Give Inspiration For Made The ShuKurenaiXRoBot",
+            "\nHere Developers Making And Give Inspiration For Made The χєηєη",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="DeepakJack", url="https://github.com/DeepakJack007"),
-                    InlineKeyboardButton(text="Kishore", url="https://github.com/AASFCYBERKING"),
-                    InlineKeyboardButton(text="Nandha", url="https://github.com/Ctzfamily"), 
+                    InlineKeyboardButton(text="ALONE", url="https://t.me/i_am_pro_king"),
+                    InlineKeyboardButton(text="ALONE", url="https://t.me/i_m_pr0_king"),
+                    InlineKeyboardButton(text="χєηєη", url="https://t.me/xenen_is_bot"), 
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="shukurenai_"),
@@ -754,9 +760,9 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1606221784:
+        if OWNER_ID != 5409807181:
             update.effective_message.reply_text(
-                "I'm free for everyone 😎 If you wanna make me smile, just join"
+                "I'm free for everyone , just join"
                 "[My Channel]({})".format(DONATION_LINK),
                 parse_mode=ParseMode.MARKDOWN,
             )
@@ -796,21 +802,20 @@ def migrate_chats(update: Update, context: CallbackContext):
     LOGGER.info("Successfully migrated!")
     raise DispatcherHandlerStop
 
-
 def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[𝐈 𝐀𝐦 𝐎𝐧𝐥𝐢𝐧𝐞](http://telegra.ph/file/ff558497b647d265ef029.jpg)", parse_mode=ParseMode.MARKDOWN,
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[χєηєη](https://telegra.ph/file/f9fc0e44d5b94cbddc6f6.jpg)", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
                        InlineKeyboardButton(
                              text="Support🚑",
-                             url=f"https://t.me/ShuKurenaiSupport"),
+                             url=f"https://t.me/ALONE_MUSIC_ADD_ICT"),
                        InlineKeyboardButton(
                              text="Updates🛰️",
-                             url="https://t.me/shukurenai007")
+                             url="https://t.me/ALONE_MUSIC_ADD_ICT")
                      ] 
                 ]
             ),
