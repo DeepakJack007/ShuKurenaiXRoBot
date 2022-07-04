@@ -4,6 +4,9 @@
 [![χєηєη](https://telegra.ph/file/a68417ac8292b75f01f1d.jpg)](https://github.com/i-am-pro-king/ALONE)
 
 
+<h1> get your string from 👇 </h1>
+
+
 [![Replit](https://blog.replit.com/images/logo.png)](https://replit.com/@iampr0king/ALONE-STRING)
 
 
@@ -14,8 +17,6 @@
  
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/i-am-pro-king/ALONE) 
 
-
-<h1> 👆 Click on Image to deploy </h1>
   
 </details>
 
