@@ -80,9 +80,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT =
-
-"""
+PM_START_TEXT = """
 *Hello {} !*
 ✪ I'm a management bot [🔥](https://telegra.ph/file/f9fc0e44d5b94cbddc6f6.jpg) 
 
